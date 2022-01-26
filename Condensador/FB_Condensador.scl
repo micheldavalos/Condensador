@@ -26,6 +26,7 @@ VERSION : 0.1
       sLLENO : Int := 30;
       sPARO : Int := 40;
       sERROR : Int := 50;
+      sMANUAL : Int := 60;
       sESPERA : Int := 0;
       s1MINSTOP : Int := 100;
       s1MINRUNNING : Int := 110;
@@ -40,6 +41,10 @@ VERSION : 0.1
 BEGIN
 	// Modo Manual
 	IF "InputsSignals".iAuto = FALSE THEN
+	(*    IF "States".sActual = #sMANUAL THEN
+	        "InputsSignals".iMotor := 0;
+	        "InputsSignals".iVibrador := 0;
+	    END_IF; *)
 	    // Controlar motor y vibrador
 	    // Salida del motor es igual a una entrada
 	    IF "InputsSignals".iSensor THEN
@@ -62,6 +67,9 @@ BEGIN
 	    // Cambiar estado
 	    "States".sActual := #sENCENDIDO;
 	    GOTO Inicio;
+	ELSIF "InputsSignals".iAuto = TRUE THEN
+	    "InputsSignals".iMotor := 0;
+	    "InputsSignals".iVibrador := 0;
 	END_IF;
 	
 	// Modo Automatico
@@ -177,9 +185,14 @@ BEGIN
 	        #oTimer5Sec := #s5SECSTOP;
 	END_CASE;
 	
+	
+	Inicio:
 	IF "InputsSignals".iParo = TRUE THEN
 	    "OutputsSignals".oMotor := 0;
 	    "InputsSignals".iParo := FALSE;
+	    
+	    "InputsSignals".iMotor := 0;
+	    "InputsSignals".iVibrador := 0;
 	    
 	    // Apagar timers
 	    "States".sTimer1Min := #s1MINSTOP;
@@ -190,11 +203,11 @@ BEGIN
 	    #oTimer15Sec := #s15SECSTOP;
 	    #oTimer5Sec := #s5SECSTOP;
 	    
+	    // Se va a manual
+	    "InputsSignals".iAuto := FALSE;
 	    // Cambiar estado
-	    "States".sActual := #sPARO;
+	    // "States".sActual := #sPARO;
 	END_IF;
-	
-	Inicio:
 	// Timer 1min
 	"Timer_UnMinuto".TON(IN := (#oTimer1Min = #s1MINRUNNING),
 	                     PT := T#1M,
