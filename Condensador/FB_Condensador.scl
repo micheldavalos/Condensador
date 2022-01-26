@@ -31,10 +31,40 @@ VERSION : 0.1
       s1MINRUNNING : Int := 110;
       s15SECSTOP : Int := 200;
       s15SECRUNNING : Int := 210;
+      s15SECPAUSE : Int := 220;
+      s5SECSTOP : Int := 300;
+      s5SECRUNNING : Int := 310;
    END_VAR
 
 
 BEGIN
+	// Modo Manual
+	IF "InputsSignals".iAuto = FALSE THEN
+	    // Controlar motor y vibrador
+	    // Salida del motor es igual a una entrada
+	    IF "InputsSignals".iSensor THEN
+	        "OutputsSignals".oMotor := FALSE;
+	    ELSE
+	        "OutputsSignals".oMotor := "InputsSignals".iMotor;
+	    END_IF;
+	    "OutputsSignals".oVibrador := "InputsSignals".iVibrador;
+	    // Vibrador es igual a una entrada
+	    // 
+	    // Apagar timers
+	    "States".sTimer1Min := #s1MINSTOP;
+	    "States".sTimer15Sec := #s15SECSTOP;
+	    "States".sTimer5Sec := #s5SECSTOP;
+	    
+	    #oTimer1Min := #s1MINSTOP;
+	    #oTimer15Sec := #s15SECSTOP;
+	    #oTimer5Sec := #s5SECSTOP;
+	    
+	    // Cambiar estado
+	    "States".sActual := #sENCENDIDO;
+	    GOTO Inicio;
+	END_IF;
+	
+	// Modo Automatico
 	#oActual := "States".sActual;
 	#oTimer1Min := "States".sTimer1Min;
 	#oTimer15Sec := "States".sTimer15Sec;
@@ -51,9 +81,9 @@ BEGIN
 	        ;
 	    #sAPAGADO:
 	        "OutputsSignals".oMotor := 0;
-	        IF "InputsSignals".iBoton = TRUE THEN
+	(*        IF "InputsSignals".iBoton = TRUE THEN
 	            "States".sActual := #sENCENDIDO;
-	        END_IF;
+	        END_IF; *)
 	    #sENCENDIDO:
 	        "OutputsSignals".oMotor := 1;
 	        
@@ -78,29 +108,55 @@ BEGIN
 	            #s15SECRUNNING:
 	                IF "Timer_15sec".Q = TRUE THEN
 	                    //"Timer_15sec".IN := FALSE;
-	                    "States".sTimer15Sec := #s15SECSTOP;
-	                    #oTimer15Sec := #s15SECSTOP;
+	                    "States".sTimer15Sec := #s15SECPAUSE;
+	                    "States".sTimer5Sec := #s5SECRUNNING;
+	                    #oTimer15Sec := #s15SECPAUSE;
+	                    #oTimer5Sec := #s5SECRUNNING;
 	                END_IF;
+	            #s15SECPAUSE:
+	                ;
+	        END_CASE;
+	        // Estados Timer 5 segundos
+	        CASE #oTimer5Sec OF
+	            #s5SECSTOP:  
+	                "OutputsSignals".oVibrador := 0;
+	            #s5SECRUNNING:
+	                // Vibrar
+	                "OutputsSignals".oVibrador := 1;
+	                #oTimer15Sec := #s15SECPAUSE;
+	                IF "Timer_5Sec".Q = TRUE THEN
+	                    "States".sTimer15Sec := #s15SECSTOP;
+	                    "States".sTimer5Sec := #s5SECSTOP;
+	                    #oTimer5Sec := #s5SECSTOP;
+	                    #oTimer15Sec := #s15SECSTOP;
+	                    // Parar de vibrar
+	                    "OutputsSignals".oVibrador := 0;
+	                END_IF;
+	                
+	            
 	        END_CASE;
 	        
-	        
-	        IF "InputsSignals".iManual = TRUE AND "InputsSignals".iBoton = FALSE THEN
+	(*        IF "InputsSignals".iManual = TRUE AND "InputsSignals".iBoton = FALSE THEN
 	            "States".sActual := #sAPAGADO;
-	        END_IF;
+	        END_IF; *)
 	        IF "InputsSignals".iSensor = TRUE THEN
 	            "States".sActual := #sLLENO;
 	            
 	            // Apagar Timers
-	            "Timer_UnMinuto".IN := FALSE;
-	            //"States".sActual := #sERROR;
 	            "States".sTimer1Min := #s1MINSTOP;
 	            "States".sTimer15Sec := #s15SECSTOP;
+	            "States".sTimer5Sec := #s5SECSTOP;
+	            
+	            #oTimer1Min := #s1MINSTOP;
+	            #oTimer15Sec := #s15SECSTOP;
+	            #oTimer5Sec := #s5SECSTOP;
 	        END_IF;
 	    #sLLENO:
 	        "OutputsSignals".oMotor := 0;
-	        IF "InputsSignals".iManual = TRUE AND "InputsSignals".iBoton = FALSE THEN
+	        "OutputsSignals".oVibrador := 0;
+	        (* IF "InputsSignals".iManual = TRUE AND "InputsSignals".iBoton = FALSE THEN
 	            "States".sActual := #sAPAGADO;
-	        END_IF;
+	        END_IF; *)
 	        IF "InputsSignals".iSensor = FALSE THEN
 	            "States".sActual := #sENCENDIDO;
 	        END_IF;
@@ -112,14 +168,33 @@ BEGIN
 	        END_IF;
 	    #sERROR:
 	        "OutputsSignals".oMotor := 0;
-	        #tUnMinuto_IN := FALSE;
+	        "States".sTimer1Min := #s1MINSTOP;
+	        "States".sTimer15Sec := #s15SECSTOP;
+	        "States".sTimer5Sec := #s5SECSTOP;
+	        
+	        #oTimer1Min := #s1MINSTOP;
+	        #oTimer15Sec := #s15SECSTOP;
+	        #oTimer5Sec := #s5SECSTOP;
 	END_CASE;
 	
 	IF "InputsSignals".iParo = TRUE THEN
+	    "OutputsSignals".oMotor := 0;
 	    "InputsSignals".iParo := FALSE;
+	    
+	    // Apagar timers
+	    "States".sTimer1Min := #s1MINSTOP;
+	    "States".sTimer15Sec := #s15SECSTOP;
+	    "States".sTimer5Sec := #s5SECSTOP;
+	    
+	    #oTimer1Min := #s1MINSTOP;
+	    #oTimer15Sec := #s15SECSTOP;
+	    #oTimer5Sec := #s5SECSTOP;
+	    
+	    // Cambiar estado
 	    "States".sActual := #sPARO;
 	END_IF;
 	
+	Inicio:
 	// Timer 1min
 	"Timer_UnMinuto".TON(IN := (#oTimer1Min = #s1MINRUNNING),
 	                     PT := T#1M,
@@ -131,7 +206,7 @@ BEGIN
 	                  Q => #t15Sec_Q,
 	                  ET => #t15Sec_ET);
 	// Timer 5sec
-	"Timer_5Sec".TON(IN := #t5Sec_IN,
+	"Timer_5Sec".TON(IN := (#oTimer5Sec = #s5SECRUNNING),
 	                 PT := T#5s,
 	                 Q => #t5Sec_Q,
 	                 ET => #t15Sec_ET);
