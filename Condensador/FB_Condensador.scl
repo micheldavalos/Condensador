@@ -1,0 +1,142 @@
+﻿FUNCTION_BLOCK "FB_Condensador"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_OUTPUT 
+      oActual : Int;
+      oTimer1Min : Int;
+      oTimer15Sec : Int;
+      oTimer5Sec : Int;
+   END_VAR
+
+   VAR_TEMP 
+      tUnMinuto_IN : Bool;
+      tUnMinuto_Q : Bool;
+      tUnMinuto_ET : Time;
+      t15Sec_IN : Bool;
+      t15Sec_Q : Bool;
+      t15Sec_ET : Time;
+      t5Sec_IN : Bool;
+      t5Sec_Q : Bool;
+      t5Sec_ET : Time;
+   END_VAR
+
+   VAR CONSTANT 
+      sAPAGADO : Int := 10;
+      sENCENDIDO : Int := 20;
+      sLLENO : Int := 30;
+      sPARO : Int := 40;
+      sERROR : Int := 50;
+      sESPERA : Int := 0;
+      s1MINSTOP : Int := 100;
+      s1MINRUNNING : Int := 110;
+      s15SECSTOP : Int := 200;
+      s15SECRUNNING : Int := 210;
+   END_VAR
+
+
+BEGIN
+	#oActual := "States".sActual;
+	#oTimer1Min := "States".sTimer1Min;
+	#oTimer15Sec := "States".sTimer15Sec;
+	#oTimer5Sec := "States".sTimer5Sec;
+	
+	// Estados
+	CASE #oActual OF
+	    #sESPERA:
+	        IF "InputsSignals".iManual = TRUE THEN
+	            "States".sActual := #sAPAGADO;
+	        ELSIF "InputsSignals".iAuto = TRUE THEN
+	            "States".sActual := #sENCENDIDO;
+	        END_IF;
+	        ;
+	    #sAPAGADO:
+	        "OutputsSignals".oMotor := 0;
+	        IF "InputsSignals".iBoton = TRUE THEN
+	            "States".sActual := #sENCENDIDO;
+	        END_IF;
+	    #sENCENDIDO:
+	        "OutputsSignals".oMotor := 1;
+	        
+	        // Estados del Timer 1 minuto
+	        CASE #oTimer1Min OF
+	            #s1MINSTOP:
+	                // Timer 1 minuto
+	                "States".sTimer1Min := #s1MINRUNNING;
+	                #oTimer1Min := #s1MINRUNNING;
+	            #s1MINRUNNING:
+	                IF "Timer_UnMinuto".Q = TRUE AND "InputsSignals".iSensor = FALSE THEN
+	                    "Timer_UnMinuto".IN := FALSE;
+	                    "States".sActual := #sERROR;
+	                    "States".sTimer1Min := #s1MINSTOP;
+	                END_IF;
+	        END_CASE;   
+	        // Estados del Timer 15 sec
+	        CASE #oTimer15Sec OF
+	            #s15SECSTOP:  
+	                "States".sTimer15Sec := #s15SECRUNNING;
+	                #oTimer15Sec := #s15SECRUNNING;
+	            #s15SECRUNNING:
+	                IF "Timer_15sec".Q = TRUE THEN
+	                    //"Timer_15sec".IN := FALSE;
+	                    "States".sTimer15Sec := #s15SECSTOP;
+	                    #oTimer15Sec := #s15SECSTOP;
+	                END_IF;
+	        END_CASE;
+	        
+	        
+	        IF "InputsSignals".iManual = TRUE AND "InputsSignals".iBoton = FALSE THEN
+	            "States".sActual := #sAPAGADO;
+	        END_IF;
+	        IF "InputsSignals".iSensor = TRUE THEN
+	            "States".sActual := #sLLENO;
+	            
+	            // Apagar Timers
+	            "Timer_UnMinuto".IN := FALSE;
+	            //"States".sActual := #sERROR;
+	            "States".sTimer1Min := #s1MINSTOP;
+	            "States".sTimer15Sec := #s15SECSTOP;
+	        END_IF;
+	    #sLLENO:
+	        "OutputsSignals".oMotor := 0;
+	        IF "InputsSignals".iManual = TRUE AND "InputsSignals".iBoton = FALSE THEN
+	            "States".sActual := #sAPAGADO;
+	        END_IF;
+	        IF "InputsSignals".iSensor = FALSE THEN
+	            "States".sActual := #sENCENDIDO;
+	        END_IF;
+	    #sPARO:
+	        "OutputsSignals".oMotor := 0;
+	        IF "InputsSignals".iParo = TRUE THEN
+	            "States".sActual := #sESPERA;
+	            "InputsSignals".iParo := FALSE;
+	        END_IF;
+	    #sERROR:
+	        "OutputsSignals".oMotor := 0;
+	        #tUnMinuto_IN := FALSE;
+	END_CASE;
+	
+	IF "InputsSignals".iParo = TRUE THEN
+	    "InputsSignals".iParo := FALSE;
+	    "States".sActual := #sPARO;
+	END_IF;
+	
+	// Timer 1min
+	"Timer_UnMinuto".TON(IN := (#oTimer1Min = #s1MINRUNNING),
+	                     PT := T#1M,
+	                     Q => #tUnMinuto_Q,
+	                     ET=>#tUnMinuto_ET);
+	// Timer 15sec
+	"Timer_15sec".TON(IN := (#oTimer15Sec = #s15SECRUNNING) AND (#oTimer1Min = #s1MINRUNNING),
+	                  PT := T#15s,
+	                  Q => #t15Sec_Q,
+	                  ET => #t15Sec_ET);
+	// Timer 5sec
+	"Timer_5Sec".TON(IN := #t5Sec_IN,
+	                 PT := T#5s,
+	                 Q => #t5Sec_Q,
+	                 ET => #t15Sec_ET);
+	
+	
+	
+END_FUNCTION_BLOCK
+
