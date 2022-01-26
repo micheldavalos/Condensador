@@ -29,7 +29,10 @@ VERSION : 0.1
 
 
 BEGIN
-	#sActual := "States".sActual;
+	"FB_Condensador_DB"();
+	
+	
+	(* #sActual := "States".sActual;
 	#sTimer1Min := "States".sTimer;
 	// Estados
 	CASE #sActual OF
@@ -100,24 +103,6 @@ BEGIN
 	"Timer_UnMinuto".TON(IN := #tUnMinuto_IN,
 	                     PT := T#5s,
 	                     Q => #tUnMinuto_Q);
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	*)
 END_ORGANIZATION_BLOCK
 
