@@ -1,0 +1,123 @@
+﻿ORGANIZATION_BLOCK "Main"
+TITLE = "Main Program Sweep (Cycle)"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR_TEMP 
+      lifebit : Bool;
+      error : Int;
+      sActual : Int;
+      sTimer1Min : Int;
+      tUnMinuto_IN : Bool;
+      tUnMinuto_Q : Bool;
+      tUnMinuto_ET : Time;
+   END_VAR
+
+   VAR CONSTANT 
+      sApagado : Int := 10;
+      sEncendido : Int := 20;
+      sLleno : Int := 30;
+      sParo : Int := 40;
+      sError : Int := 50;
+      s1MinStop : Int := 100;
+      s1MinRunning : Int := 110;
+      s15SecStop : Int := 200;
+      s15SecRunning : Int := 210;
+      sEspera : Int := 0;
+      HIGH : Bool := 1;
+      LOW : Bool := 0;
+   END_VAR
+
+
+BEGIN
+	#sActual := "States".sActual;
+	#sTimer1Min := "States".sTimer;
+	// Estados
+	CASE #sActual OF
+	    #sEspera:
+	        IF "InputsSignals".iManual = TRUE THEN
+	            "States".sActual := #sApagado;
+	        ELSIF "InputsSignals".iAuto = TRUE THEN
+	            "States".sActual := #sEncendido;
+	        END_IF;
+	        ;
+	    #sApagado:
+	        "OutputsSignals".oMotor := 0;
+	        IF "InputsSignals".iBoton = TRUE THEN
+	            "States".sActual := #sEncendido;
+	        END_IF;
+	    #sEncendido:
+	        "OutputsSignals".oMotor := 1;
+	        #tUnMinuto_IN := TRUE;
+	        
+	        // Estados del Timer 1 minuto
+	        CASE #sTimer1Min OF
+	            #s1MinStop:
+	                // Timer 1 minuto
+	                "States".sTimer := #s1MinRunning;
+	            #s1MinRunning:
+	                IF "Timer_UnMinuto".Q = TRUE AND "InputsSignals".iSensor = FALSE THEN
+	                    "Timer_UnMinuto".IN := FALSE;
+	                    "States".sActual := #sError;
+	                    "States".sTimer := #s1MinStop;
+	                END_IF;
+	        END_CASE;
+	        
+	        IF "InputsSignals".iManual = TRUE AND "InputsSignals".iBoton = FALSE THEN     
+	            "States".sActual := #sApagado;
+	        END_IF;
+	        IF "InputsSignals".iSensor = TRUE THEN
+	            "States".sActual := #sLleno;
+	            
+	            // Apagar Timers
+	            "Timer_UnMinuto".IN := FALSE;
+	            "States".sActual := #sError;
+	            "States".sTimer := #s1MinStop;
+	        END_IF;
+	    #sLleno:
+	        "OutputsSignals".oMotor := 0;
+	        IF "InputsSignals".iManual = TRUE AND "InputsSignals".iBoton = FALSE THEN     
+	            "States".sActual := #sApagado;
+	        END_IF;
+	        IF "InputsSignals".iSensor = FALSE THEN
+	            "States".sActual := #sEncendido;
+	        END_IF;
+	    #sParo:
+	        "OutputsSignals".oMotor := 0;
+	        IF "InputsSignals".iParo = TRUE THEN
+	            "States".sActual := #sEspera;
+	            "InputsSignals".iParo := FALSE;
+	        END_IF;
+	    #sError:
+	        "OutputsSignals".oMotor := 0;
+	        #tUnMinuto_IN := FALSE;
+	END_CASE;
+	
+	IF "InputsSignals".iParo = TRUE THEN
+	    "InputsSignals".iParo := FALSE;
+	    "States".sActual := #sParo;
+	END_IF;
+	
+	"Timer_UnMinuto".TON(IN := #tUnMinuto_IN,
+	                     PT := T#5s,
+	                     Q => #tUnMinuto_Q);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+END_ORGANIZATION_BLOCK
+
