@@ -1,0 +1,31 @@
+﻿FUNCTION "FC_Apagar_Timers" : Void
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR CONSTANT 
+      sAPAGADO : Int := 10;
+      sENCENDIDO : Int := 20;
+      sLLENO : Int := 30;
+      sPARO : Int := 40;
+      sERROR : Int := 50;
+      sMANUAL : Int := 60;
+      sESPERA : Int := 0;
+      s1MINSTOP : Int := 100;
+      s1MINRUNNING : Int := 110;
+      s15SECSTOP : Int := 200;
+      s15SECRUNNING : Int := 210;
+      s15SECPAUSE : Int := 220;
+      s5SECSTOP : Int := 300;
+      s5SECRUNNING : Int := 310;
+   END_VAR
+
+
+BEGIN
+	"States".sTimer1Min := #s1MINSTOP;
+	"States".sTimer15Sec := #s15SECSTOP;
+	"States".sTimer5Sec := #s5SECSTOP;
+	
+	"FB_Condensador_DB".oTimer1Min := #s1MINSTOP;
+	"FB_Condensador_DB".oTimer15Sec := #s15SECSTOP;
+	"FB_Condensador_DB".oTimer5Sec := #s5SECSTOP;
+END_FUNCTION
+
