@@ -1,0 +1,1818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gaphor xmlns="http://gaphor.sourceforge.net/model" version="3.0" gaphor-version="2.8.1">
+<StyleSheet id="58d6989a-66f8-11ec-b4c8-0456e5e540ed"/>
+<Package id="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed">
+<name>
+<val>B1</val>
+</name>
+<ownedDiagram>
+<reflist>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</reflist>
+</ownedDiagram>
+<ownedType>
+<reflist>
+<ref refid="d7a6075b-7f85-11ec-9fdf-e0d464771e5a"/>
+<ref refid="77150d99-7f88-11ec-9327-e0d464771e5a"/>
+</reflist>
+</ownedType>
+</Package>
+<Diagram id="7241e7b0-7f85-11ec-8dde-e0d464771e5a">
+<diagramType>
+<val>stm</val>
+</diagramType>
+<element>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</element>
+<name>
+<val>Condensador (Auto)</val>
+</name>
+<ownedPresentation>
+<reflist>
+<ref refid="d7a5e06e-7f85-11ec-8fee-e0d464771e5a"/>
+<ref refid="a2626862-7f86-11ec-b0b2-e0d464771e5a"/>
+<ref refid="fb806920-7f86-11ec-accd-e0d464771e5a"/>
+<ref refid="66935bdd-7f87-11ec-88f2-e0d464771e5a"/>
+<ref refid="a0a19257-7f87-11ec-bd4e-e0d464771e5a"/>
+<ref refid="a5ae8238-7f8a-11ec-bf2c-e0d464771e5a"/>
+<ref refid="c762c74b-7f8a-11ec-83a1-e0d464771e5a"/>
+<ref refid="906cbbaa-7f8b-11ec-9123-e0d464771e5a"/>
+<ref refid="a408108d-7f8b-11ec-a5ca-e0d464771e5a"/>
+<ref refid="2f04310b-7f8c-11ec-9610-e0d464771e5a"/>
+<ref refid="b3397dc3-7f8c-11ec-8e2e-e0d464771e5a"/>
+<ref refid="12196cf0-7f8d-11ec-9866-e0d464771e5a"/>
+<ref refid="3c8bda45-7f8d-11ec-ae2b-e0d464771e5a"/>
+<ref refid="bf71903e-7f8d-11ec-ba19-e0d464771e5a"/>
+<ref refid="e20f152d-7f8d-11ec-a318-e0d464771e5a"/>
+<ref refid="ec43ab94-7f8e-11ec-ae24-e0d464771e5a"/>
+<ref refid="e73ba38c-7f90-11ec-a873-e0d464771e5a"/>
+<ref refid="0a6d7e12-7f91-11ec-880d-e0d464771e5a"/>
+<ref refid="557a1a7c-7f91-11ec-81c9-e0d464771e5a"/>
+<ref refid="5d2adaa1-7f91-11ec-bd99-e0d464771e5a"/>
+<ref refid="7fb2cf8f-7f92-11ec-a806-e0d464771e5a"/>
+<ref refid="a8439aeb-7f92-11ec-9314-e0d464771e5a"/>
+<ref refid="f6113295-7f92-11ec-8e47-e0d464771e5a"/>
+<ref refid="0f9ee109-7f93-11ec-b53c-e0d464771e5a"/>
+<ref refid="90fa8ec5-7f93-11ec-8f89-e0d464771e5a"/>
+<ref refid="067223a3-7f94-11ec-a335-e0d464771e5a"/>
+<ref refid="3ec3124c-7f94-11ec-ae12-e0d464771e5a"/>
+<ref refid="2b3645c7-7f8b-11ec-8268-e0d464771e5a"/>
+<ref refid="b96dfd2e-7f8b-11ec-a6de-e0d464771e5a"/>
+<ref refid="260069af-7f8d-11ec-aaea-e0d464771e5a"/>
+<ref refid="9ceb172c-7f8d-11ec-adf5-e0d464771e5a"/>
+<ref refid="350863ff-7f8e-11ec-8f0d-e0d464771e5a"/>
+<ref refid="7d0ceb21-7f8e-11ec-b100-e0d464771e5a"/>
+<ref refid="3711b81f-7f8f-11ec-9af5-e0d464771e5a"/>
+<ref refid="7e6baf6f-7f8f-11ec-9a10-e0d464771e5a"/>
+<ref refid="cd929cb4-7f8f-11ec-9e88-e0d464771e5a"/>
+<ref refid="12643b38-7f90-11ec-a267-e0d464771e5a"/>
+<ref refid="f15a0252-7f90-11ec-a413-e0d464771e5a"/>
+<ref refid="69c7faba-7f91-11ec-9fef-e0d464771e5a"/>
+<ref refid="788c8888-7f91-11ec-9b18-e0d464771e5a"/>
+<ref refid="84231c5c-7f92-11ec-9f9e-e0d464771e5a"/>
+<ref refid="bde2e9fa-7f92-11ec-bd93-e0d464771e5a"/>
+<ref refid="00433e47-7f93-11ec-b97d-e0d464771e5a"/>
+<ref refid="15b51fb6-7f93-11ec-acdd-e0d464771e5a"/>
+<ref refid="eead9713-7f93-11ec-8097-e0d464771e5a"/>
+<ref refid="5549857d-7f94-11ec-bec7-e0d464771e5a"/>
+<ref refid="5a49b6b9-7f96-11ec-ab1d-e0d464771e5a"/>
+</reflist>
+</ownedPresentation>
+</Diagram>
+<State id="d7a5b969-7f85-11ec-b8b7-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<doActivity>
+<ref refid="da18a271-7f86-11ec-abe5-e0d464771e5a"/>
+</doActivity>
+<entry>
+<ref refid="e02ccecb-7f86-11ec-9daa-e0d464771e5a"/>
+</entry>
+<exit>
+<ref refid="e784e49f-7f86-11ec-a96e-e0d464771e5a"/>
+</exit>
+<incoming>
+<reflist>
+<ref refid="41e8d181-7f91-11ec-9b4a-e0d464771e5a"/>
+</reflist>
+</incoming>
+<name>
+<val>Encendido</val>
+</name>
+<outgoing>
+<reflist>
+<ref refid="cf539fd6-7f8f-11ec-9bd3-e0d464771e5a"/>
+</reflist>
+</outgoing>
+<presentation>
+<reflist>
+<ref refid="d7a5e06e-7f85-11ec-8fee-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="d7a5e06e-7f85-11ec-8fee-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1790.002203901485, -1580.8522858830847)</val>
+</matrix>
+<width>
+<val>1671.4408998657334</val>
+</width>
+<height>
+<val>844.8905079051332</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="d7a5b969-7f85-11ec-b8b7-e0d464771e5a"/>
+</subject>
+</StateItem>
+<StateMachine id="d7a6075b-7f85-11ec-9fdf-e0d464771e5a">
+<name>
+<val>State Machine</val>
+</name>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+<region>
+<reflist>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</reflist>
+</region>
+</StateMachine>
+<Region id="d7a62e4f-7f85-11ec-b188-e0d464771e5a">
+<name>
+<val>Default Region</val>
+</name>
+<stateMachine>
+<ref refid="d7a6075b-7f85-11ec-9fdf-e0d464771e5a"/>
+</stateMachine>
+<subvertex>
+<reflist>
+<ref refid="d7a5b969-7f85-11ec-b8b7-e0d464771e5a"/>
+<ref refid="a2626861-7f86-11ec-ab7f-e0d464771e5a"/>
+<ref refid="fb80691f-7f86-11ec-b096-e0d464771e5a"/>
+<ref refid="66935bdc-7f87-11ec-84a4-e0d464771e5a"/>
+<ref refid="a0a16b5c-7f87-11ec-9e4f-e0d464771e5a"/>
+<ref refid="a5ae8237-7f8a-11ec-a3b3-e0d464771e5a"/>
+<ref refid="c762c74a-7f8a-11ec-9a8b-e0d464771e5a"/>
+<ref refid="906cbba9-7f8b-11ec-a466-e0d464771e5a"/>
+<ref refid="a407ea6c-7f8b-11ec-a9ff-e0d464771e5a"/>
+<ref refid="b3397dc2-7f8c-11ec-86cc-e0d464771e5a"/>
+<ref refid="12196cef-7f8d-11ec-a39d-e0d464771e5a"/>
+<ref refid="3c8bb365-7f8d-11ec-b467-e0d464771e5a"/>
+<ref refid="bf71903d-7f8d-11ec-b52a-e0d464771e5a"/>
+<ref refid="e73ba38b-7f90-11ec-9069-e0d464771e5a"/>
+<ref refid="0a6d7e11-7f91-11ec-9013-e0d464771e5a"/>
+<ref refid="557a1a7b-7f91-11ec-a86a-e0d464771e5a"/>
+<ref refid="7fb2a879-7f92-11ec-afd5-e0d464771e5a"/>
+<ref refid="90fa67cb-7f93-11ec-8ac6-e0d464771e5a"/>
+<ref refid="0671fca0-7f94-11ec-9f0a-e0d464771e5a"/>
+<ref refid="3ec3124b-7f94-11ec-b0cb-e0d464771e5a"/>
+</reflist>
+</subvertex>
+</Region>
+<State id="a2626861-7f86-11ec-ab7f-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<doActivity>
+<ref refid="b203fa4e-7f8f-11ec-83f1-e0d464771e5a"/>
+</doActivity>
+<entry>
+<ref refid="96f3fadd-7f8f-11ec-9fc1-e0d464771e5a"/>
+</entry>
+<incoming>
+<reflist>
+<ref refid="822797bf-7f8f-11ec-8771-e0d464771e5a"/>
+</reflist>
+</incoming>
+<name>
+<val>Error</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="a2626862-7f86-11ec-b0b2-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="a2626862-7f86-11ec-b0b2-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 59.38001120818937, -1346.4238358826772)</val>
+</matrix>
+<width>
+<val>398.0</val>
+</width>
+<height>
+<val>113.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="a2626861-7f86-11ec-ab7f-e0d464771e5a"/>
+</subject>
+</StateItem>
+<Activity id="da18a271-7f86-11ec-abe5-e0d464771e5a">
+<name>
+<val>Manda señal al motor</val>
+</name>
+</Activity>
+<Activity id="e02ccecb-7f86-11ec-9daa-e0d464771e5a">
+<name>
+<val>Modo Automático</val>
+</name>
+</Activity>
+<Activity id="e784e49f-7f86-11ec-a96e-e0d464771e5a">
+<name>
+<val>Sensor HIGH</val>
+</name>
+</Activity>
+<State id="fb80691f-7f86-11ec-b096-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<doActivity>
+<ref refid="33bfc3ed-7f87-11ec-91eb-e0d464771e5a"/>
+</doActivity>
+<entry>
+<ref refid="e963581c-7f8f-11ec-ba76-e0d464771e5a"/>
+</entry>
+<exit>
+<ref refid="23ba59b1-7f87-11ec-9753-e0d464771e5a"/>
+</exit>
+<incoming>
+<reflist>
+<ref refid="cf539fd6-7f8f-11ec-9bd3-e0d464771e5a"/>
+</reflist>
+</incoming>
+<name>
+<val>Lleno</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="fb806920-7f86-11ec-accd-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="fb806920-7f86-11ec-accd-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 3.3800112081893285, -1082.2597941149477)</val>
+</matrix>
+<width>
+<val>277.0</val>
+</width>
+<height>
+<val>148.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="fb80691f-7f86-11ec-b096-e0d464771e5a"/>
+</subject>
+</StateItem>
+<Activity id="23ba59b1-7f87-11ec-9753-e0d464771e5a">
+<name>
+<val>Sensor LOW</val>
+</name>
+</Activity>
+<Activity id="33bfc3ed-7f87-11ec-91eb-e0d464771e5a">
+<name>
+<val>Esperar hasta que sensor este en LOW</val>
+</name>
+</Activity>
+<State id="66935bdc-7f87-11ec-84a4-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<incoming>
+<reflist>
+<ref refid="212d6707-7f90-11ec-95ae-e0d464771e5a"/>
+</reflist>
+</incoming>
+<name>
+<val>Timers Running</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="66935bdd-7f87-11ec-88f2-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="66935bdd-7f87-11ec-88f2-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1998.0503220368469, -1337.1507793302906)</val>
+</matrix>
+<width>
+<val>1445.3423870529925</val>
+</width>
+<height>
+<val>663.0433038806212</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="66935bdc-7f87-11ec-84a4-e0d464771e5a"/>
+</subject>
+</StateItem>
+<Pseudostate id="a0a16b5c-7f87-11ec-9e4f-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<name>
+<val>Start Timers</val>
+</name>
+<outgoing>
+<reflist>
+<ref refid="212d6707-7f90-11ec-95ae-e0d464771e5a"/>
+</reflist>
+</outgoing>
+<presentation>
+<reflist>
+<ref refid="a0a19257-7f87-11ec-bd4e-e0d464771e5a"/>
+</reflist>
+</presentation>
+</Pseudostate>
+<PseudostateItem id="a0a19257-7f87-11ec-bd4e-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1837.8142140582045, -1111.042525470706)</val>
+</matrix>
+<width>
+<val>20.0</val>
+</width>
+<height>
+<val>20.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="a0a16b5c-7f87-11ec-9e4f-e0d464771e5a"/>
+</subject>
+</PseudostateItem>
+<Activity id="77150d99-7f88-11ec-9327-e0d464771e5a">
+<name>
+<val>Activity</val>
+</name>
+<node>
+<reflist>
+<ref refid="2f04310a-7f8c-11ec-b02b-e0d464771e5a"/>
+<ref refid="e20eee36-7f8d-11ec-acb0-e0d464771e5a"/>
+<ref refid="ec438494-7f8e-11ec-b4f9-e0d464771e5a"/>
+<ref refid="5d2adaa0-7f91-11ec-a1c3-e0d464771e5a"/>
+<ref refid="a8439aea-7f92-11ec-b5e0-e0d464771e5a"/>
+<ref refid="f6110ce4-7f92-11ec-b78f-e0d464771e5a"/>
+<ref refid="0f9ee108-7f93-11ec-88ae-e0d464771e5a"/>
+</reflist>
+</node>
+<package>
+<ref refid="58d6c2e8-66f8-11ec-b4c8-0456e5e540ed"/>
+</package>
+</Activity>
+<State id="a5ae8237-7f8a-11ec-a3b3-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<doActivity>
+<ref refid="b89fbe0b-7f8a-11ec-8ce9-e0d464771e5a"/>
+</doActivity>
+<incoming>
+<reflist>
+<ref refid="84dfad91-7f92-11ec-be0e-e0d464771e5a"/>
+</reflist>
+</incoming>
+<name>
+<val>1MinStop</val>
+</name>
+<outgoing>
+<reflist>
+<ref refid="2d4f376a-7f8b-11ec-a13c-e0d464771e5a"/>
+</reflist>
+</outgoing>
+<presentation>
+<reflist>
+<ref refid="a5ae8238-7f8a-11ec-bf2c-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="a5ae8238-7f8a-11ec-bf2c-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1569.1801369251104, -1323.3658437197207)</val>
+</matrix>
+<width>
+<val>120.0</val>
+</width>
+<height>
+<val>50.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="a5ae8237-7f8a-11ec-a3b3-e0d464771e5a"/>
+</subject>
+</StateItem>
+<State id="c762c74a-7f8a-11ec-9a8b-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<incoming>
+<reflist>
+<ref refid="2d4f376a-7f8b-11ec-a13c-e0d464771e5a"/>
+</reflist>
+</incoming>
+<name>
+<val>1MinRunning</val>
+</name>
+<outgoing>
+<reflist>
+<ref refid="822797bf-7f8f-11ec-8771-e0d464771e5a"/>
+</reflist>
+</outgoing>
+<presentation>
+<reflist>
+<ref refid="c762c74b-7f8a-11ec-83a1-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="c762c74b-7f8a-11ec-83a1-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1348.5093864652872, -1318.9524287105246)</val>
+</matrix>
+<width>
+<val>128.47941471216393</val>
+</width>
+<height>
+<val>48.05718565569509</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<note>
+<val></val>
+</note>
+<subject>
+<ref refid="c762c74a-7f8a-11ec-9a8b-e0d464771e5a"/>
+</subject>
+</StateItem>
+<TransitionItem id="2b3645c7-7f8b-11ec-8268-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<subject>
+<ref refid="2d4f376a-7f8b-11ec-a13c-e0d464771e5a"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1451.4890700132048, -1292.881570515959)</val>
+</matrix>
+<points>
+<val>[(2.308933088094136, -2.042265366718027), (102.97968354791766, -2.042265366718027)]</val>
+</points>
+<head-connection>
+<ref refid="a5ae8238-7f8a-11ec-bf2c-e0d464771e5a"/>
+</head-connection>
+<tail-connection>
+<ref refid="c762c74b-7f8a-11ec-83a1-e0d464771e5a"/>
+</tail-connection>
+</TransitionItem>
+<Transition id="2d4f376a-7f8b-11ec-a13c-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<guard>
+<ref refid="2d504909-7f8b-11ec-aae7-e0d464771e5a"/>
+</guard>
+<name>
+<val>activar Timer</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="2b3645c7-7f8b-11ec-8268-e0d464771e5a"/>
+</reflist>
+</presentation>
+<source>
+<ref refid="a5ae8237-7f8a-11ec-a3b3-e0d464771e5a"/>
+</source>
+<target>
+<ref refid="c762c74a-7f8a-11ec-9a8b-e0d464771e5a"/>
+</target>
+</Transition>
+<Constraint id="2d504909-7f8b-11ec-aae7-e0d464771e5a">
+<specification>
+<val></val>
+</specification>
+<transition>
+<ref refid="2d4f376a-7f8b-11ec-a13c-e0d464771e5a"/>
+</transition>
+</Constraint>
+<State id="906cbba9-7f8b-11ec-a466-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<doActivity>
+<ref refid="9cef8ccc-7f8b-11ec-be09-e0d464771e5a"/>
+</doActivity>
+<name>
+<val>15SegStop</val>
+</name>
+<outgoing>
+<reflist>
+<ref refid="ba70e512-7f8b-11ec-b1fc-e0d464771e5a"/>
+</reflist>
+</outgoing>
+<presentation>
+<reflist>
+<ref refid="906cbbaa-7f8b-11ec-9123-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="906cbbaa-7f8b-11ec-9123-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1547.6471165868272, -963.2935667265365)</val>
+</matrix>
+<width>
+<val>123.0</val>
+</width>
+<height>
+<val>50.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="906cbba9-7f8b-11ec-a466-e0d464771e5a"/>
+</subject>
+</StateItem>
+<Activity id="9cef8ccc-7f8b-11ec-be09-e0d464771e5a">
+<name>
+<val>Activiar Timer</val>
+</name>
+</Activity>
+<State id="a407ea6c-7f8b-11ec-a9ff-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<incoming>
+<reflist>
+<ref refid="ba70e512-7f8b-11ec-b1fc-e0d464771e5a"/>
+</reflist>
+</incoming>
+<name>
+<val>15SecRunning</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="a408108d-7f8b-11ec-a5ca-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="a408108d-7f8b-11ec-a5ca-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1325.9773065271559, -957.9021317355761)</val>
+</matrix>
+<width>
+<val>96.0</val>
+</width>
+<height>
+<val>30.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="a407ea6c-7f8b-11ec-a9ff-e0d464771e5a"/>
+</subject>
+</StateItem>
+<TransitionItem id="b96dfd2e-7f8b-11ec-a6de-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<subject>
+<ref refid="ba70e512-7f8b-11ec-b1fc-e0d464771e5a"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1431.4586763038833, -950.6790582602346)</val>
+</matrix>
+<points>
+<val>[(6.811559717055957, 9.942946025146739), (105.4813697767272, 4.546033215848979)]</val>
+</points>
+<head-connection>
+<ref refid="906cbbaa-7f8b-11ec-9123-e0d464771e5a"/>
+</head-connection>
+<tail-connection>
+<ref refid="a408108d-7f8b-11ec-a5ca-e0d464771e5a"/>
+</tail-connection>
+</TransitionItem>
+<Transition id="ba70e512-7f8b-11ec-b1fc-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<guard>
+<ref refid="ba724390-7f8b-11ec-98cf-e0d464771e5a"/>
+</guard>
+<name>
+<val>activar Timer</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="b96dfd2e-7f8b-11ec-a6de-e0d464771e5a"/>
+</reflist>
+</presentation>
+<source>
+<ref refid="906cbba9-7f8b-11ec-a466-e0d464771e5a"/>
+</source>
+<target>
+<ref refid="a407ea6c-7f8b-11ec-a9ff-e0d464771e5a"/>
+</target>
+</Transition>
+<Constraint id="ba724390-7f8b-11ec-98cf-e0d464771e5a">
+<specification>
+<val></val>
+</specification>
+<transition>
+<ref refid="ba70e512-7f8b-11ec-b1fc-e0d464771e5a"/>
+</transition>
+</Constraint>
+<JoinNode id="2f04310a-7f8c-11ec-b02b-e0d464771e5a">
+<activity>
+<ref refid="77150d99-7f88-11ec-9327-e0d464771e5a"/>
+</activity>
+<joinSpec>
+<val></val>
+</joinSpec>
+<name>
+<val></val>
+</name>
+<presentation>
+<reflist>
+<ref refid="2f04310b-7f8c-11ec-9610-e0d464771e5a"/>
+</reflist>
+</presentation>
+</JoinNode>
+<ForkNodeItem id="2f04310b-7f8c-11ec-9610-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1184.5682071280914, -989.5723217586735)</val>
+</matrix>
+<height>
+<val>90.2298179657945</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<note>
+<val></val>
+</note>
+<subject>
+<ref refid="2f04310a-7f8c-11ec-b02b-e0d464771e5a"/>
+</subject>
+</ForkNodeItem>
+<State id="b3397dc2-7f8c-11ec-86cc-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<doActivity>
+<ref refid="e210743f-7f8c-11ec-8f4a-e0d464771e5a"/>
+</doActivity>
+<incoming>
+<reflist>
+<ref refid="564f9e1e-7f94-11ec-9272-e0d464771e5a"/>
+</reflist>
+</incoming>
+<name>
+<val>5SegRunning</val>
+</name>
+<outgoing>
+<reflist>
+<ref refid="276a59ca-7f8d-11ec-bae9-e0d464771e5a"/>
+</reflist>
+</outgoing>
+<presentation>
+<reflist>
+<ref refid="b3397dc3-7f8c-11ec-8e2e-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="b3397dc3-7f8c-11ec-8e2e-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -846.6263396771802, -971.1330250443856)</val>
+</matrix>
+<width>
+<val>136.0</val>
+</width>
+<height>
+<val>50.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="b3397dc2-7f8c-11ec-86cc-e0d464771e5a"/>
+</subject>
+</StateItem>
+<Activity id="e210743f-7f8c-11ec-8f4a-e0d464771e5a">
+<name>
+<val>Vibra  por 5 seg</val>
+</name>
+</Activity>
+<State id="12196cef-7f8d-11ec-a39d-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<doActivity>
+<ref refid="04dfe75b-7f8e-11ec-9ed8-e0d464771e5a"/>
+</doActivity>
+<incoming>
+<reflist>
+<ref refid="276a59ca-7f8d-11ec-bae9-e0d464771e5a"/>
+</reflist>
+</incoming>
+<name>
+<val>5SegStop</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="12196cf0-7f8d-11ec-9866-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="12196cf0-7f8d-11ec-9866-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -639.3454237651954, -971.1330250443856)</val>
+</matrix>
+<width>
+<val>131.0</val>
+</width>
+<height>
+<val>50.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="12196cef-7f8d-11ec-a39d-e0d464771e5a"/>
+</subject>
+</StateItem>
+<TransitionItem id="260069af-7f8d-11ec-aaea-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<subject>
+<ref refid="276a59ca-7f8d-11ec-bae9-e0d464771e5a"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -738.7428616746005, -878.7599976002938)</val>
+</matrix>
+<points>
+<val>[(28.116521997420236, -67.37302744409203), (99.39743790940511, -67.3730274440918)]</val>
+</points>
+<head-connection>
+<ref refid="b3397dc3-7f8c-11ec-8e2e-e0d464771e5a"/>
+</head-connection>
+<tail-connection>
+<ref refid="12196cf0-7f8d-11ec-9866-e0d464771e5a"/>
+</tail-connection>
+</TransitionItem>
+<Transition id="276a59ca-7f8d-11ec-bae9-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<guard>
+<ref refid="276b6b6a-7f8d-11ec-99cd-e0d464771e5a"/>
+</guard>
+<name>
+<val>TimeOut</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="260069af-7f8d-11ec-aaea-e0d464771e5a"/>
+</reflist>
+</presentation>
+<source>
+<ref refid="b3397dc2-7f8c-11ec-86cc-e0d464771e5a"/>
+</source>
+<target>
+<ref refid="12196cef-7f8d-11ec-a39d-e0d464771e5a"/>
+</target>
+</Transition>
+<Constraint id="276b6b6a-7f8d-11ec-99cd-e0d464771e5a">
+<transition>
+<ref refid="276a59ca-7f8d-11ec-bae9-e0d464771e5a"/>
+</transition>
+</Constraint>
+<FinalState id="3c8bb365-7f8d-11ec-b467-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<name>
+<val>15SegPause</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="3c8bda45-7f8d-11ec-ae2b-e0d464771e5a"/>
+</reflist>
+</presentation>
+</FinalState>
+<FinalStateItem id="3c8bda45-7f8d-11ec-ae2b-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1091.5400993568758, -992.3599412094452)</val>
+</matrix>
+<width>
+<val>30.0</val>
+</width>
+<height>
+<val>30.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="3c8bb365-7f8d-11ec-b467-e0d464771e5a"/>
+</subject>
+</FinalStateItem>
+<TransitionItem id="9ceb172c-7f8d-11ec-adf5-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1175.2714682429987, -954.1539722665771)</val>
+</matrix>
+<points>
+<val>[(-6.650101902903998, -0.17534007909489446), (83.73136888612288, -16.629273342351894)]</val>
+</points>
+<tail-connection>
+<ref refid="3c8bda45-7f8d-11ec-ae2b-e0d464771e5a"/>
+</tail-connection>
+</TransitionItem>
+<State id="bf71903d-7f8d-11ec-b52a-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<doActivity>
+<ref refid="f59b40f3-7f8d-11ec-b5b1-e0d464771e5a"/>
+</doActivity>
+<entry>
+<ref refid="18a105d3-7f8f-11ec-81b6-e0d464771e5a"/>
+</entry>
+<exit>
+<ref refid="0d9abff0-7f8f-11ec-9fa4-e0d464771e5a"/>
+</exit>
+<name>
+<val>Timer 15 y 5 segundos (Vibrador)</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="bf71903e-7f8d-11ec-ba19-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="bf71903e-7f8d-11ec-ba19-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1600.0636110235228, -1174.8745779003934)</val>
+</matrix>
+<width>
+<val>1367.2834539106807</val>
+</width>
+<height>
+<val>365.0292733818962</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="bf71903d-7f8d-11ec-b52a-e0d464771e5a"/>
+</subject>
+</StateItem>
+<FlowFinalNode id="e20eee36-7f8d-11ec-acb0-e0d464771e5a">
+<activity>
+<ref refid="77150d99-7f88-11ec-9327-e0d464771e5a"/>
+</activity>
+<name>
+<val>Comienza Timer 15 Seg</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="e20f152d-7f8d-11ec-a318-e0d464771e5a"/>
+</reflist>
+</presentation>
+</FlowFinalNode>
+<FlowFinalNodeItem id="e20f152d-7f8d-11ec-a318-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -434.4114634680264, -955.8831043153981)</val>
+</matrix>
+<width>
+<val>20.0</val>
+</width>
+<height>
+<val>20.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="e20eee36-7f8d-11ec-acb0-e0d464771e5a"/>
+</subject>
+</FlowFinalNodeItem>
+<Activity id="f59b40f3-7f8d-11ec-b5b1-e0d464771e5a">
+<name>
+<val>Timer 15 segs y vibrar por 5 segundos</val>
+</name>
+</Activity>
+<Activity id="04dfe75b-7f8e-11ec-9ed8-e0d464771e5a">
+<name>
+<val>Apaga vibrador</val>
+</name>
+</Activity>
+<FlowItem id="350863ff-7f8e-11ec-8f0d-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -512.2528248259108, -945.5466743546938)</val>
+</matrix>
+<points>
+<val>[(3.9074010607153014, -0.5445626745601544), (77.84136135788447, -0.33642996070443587)]</val>
+</points>
+<tail-connection>
+<ref refid="e20f152d-7f8d-11ec-a318-e0d464771e5a"/>
+</tail-connection>
+</FlowItem>
+<CommentLineItem id="7d0ceb21-7f8e-11ec-b100-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1646.7001024798863, -1208.051703866584)</val>
+</matrix>
+<points>
+<val>[(-115.90079031480627, 8.929849875164109), (1329.441596738186, 8.929849875164166)]</val>
+</points>
+<head-connection>
+<ref refid="66935bdd-7f87-11ec-88f2-e0d464771e5a"/>
+</head-connection>
+</CommentLineItem>
+<Activity id="0d9abff0-7f8f-11ec-9fa4-e0d464771e5a">
+<name>
+<val>Termina de vibrar</val>
+</name>
+</Activity>
+<Activity id="18a105d3-7f8f-11ec-81b6-e0d464771e5a">
+<name>
+<val>Activo el Timer 1 minuto</val>
+</name>
+</Activity>
+<TransitionItem id="3711b81f-7f8f-11ec-9af5-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1642.4109720130468, -945.8831043153981)</val>
+</matrix>
+<points>
+<val>[(0.0, 0.0), (94.7638554262196, 6.7066166692465)]</val>
+</points>
+<tail-connection>
+<ref refid="906cbbaa-7f8b-11ec-9123-e0d464771e5a"/>
+</tail-connection>
+</TransitionItem>
+<TransitionItem id="7e6baf6f-7f8f-11ec-9a10-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<subject>
+<ref refid="822797bf-7f8f-11ec-8771-e0d464771e5a"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1214.4123205870192, -1291.9565637179155)</val>
+</matrix>
+<points>
+<val>[(-5.617651166104167, -2.967272164761596), (1217.7923317952086, 0.4747356722821223)]</val>
+</points>
+<head-connection>
+<ref refid="c762c74b-7f8a-11ec-83a1-e0d464771e5a"/>
+</head-connection>
+<tail-connection>
+<ref refid="a2626862-7f86-11ec-b0b2-e0d464771e5a"/>
+</tail-connection>
+</TransitionItem>
+<Transition id="822797bf-7f8f-11ec-8771-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<guard>
+<ref refid="8228bf9d-7f8f-11ec-b0f4-e0d464771e5a"/>
+</guard>
+<presentation>
+<reflist>
+<ref refid="7e6baf6f-7f8f-11ec-9a10-e0d464771e5a"/>
+</reflist>
+</presentation>
+<source>
+<ref refid="c762c74a-7f8a-11ec-9a8b-e0d464771e5a"/>
+</source>
+<target>
+<ref refid="a2626861-7f86-11ec-ab7f-e0d464771e5a"/>
+</target>
+</Transition>
+<Constraint id="8228bf9d-7f8f-11ec-b0f4-e0d464771e5a">
+<transition>
+<ref refid="822797bf-7f8f-11ec-8771-e0d464771e5a"/>
+</transition>
+</Constraint>
+<Activity id="96f3fadd-7f8f-11ec-9fc1-e0d464771e5a">
+<name>
+<val>Si se cumplió 1 minuto sin que el sensor esté HIGH</val>
+</name>
+</Activity>
+<Activity id="b203fa4e-7f8f-11ec-83f1-e0d464771e5a">
+<name>
+<val>Apaga Motor, Vibrador y Timers</val>
+</name>
+</Activity>
+<TransitionItem id="cd929cb4-7f8f-11ec-9e88-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<subject>
+<ref refid="cf539fd6-7f8f-11ec-9bd3-e0d464771e5a"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -525.1018620590443, -1073.040520009154)</val>
+</matrix>
+<points>
+<val>[(305.995039600424, -42.54322668017312), (528.4818732672336, -42.54322668017312)]</val>
+</points>
+<head-connection>
+<ref refid="d7a5e06e-7f85-11ec-8fee-e0d464771e5a"/>
+</head-connection>
+<tail-connection>
+<ref refid="fb806920-7f86-11ec-accd-e0d464771e5a"/>
+</tail-connection>
+</TransitionItem>
+<Transition id="cf539fd6-7f8f-11ec-9bd3-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<guard>
+<ref refid="cf54629d-7f8f-11ec-87f7-e0d464771e5a"/>
+</guard>
+<presentation>
+<reflist>
+<ref refid="cd929cb4-7f8f-11ec-9e88-e0d464771e5a"/>
+</reflist>
+</presentation>
+<source>
+<ref refid="d7a5b969-7f85-11ec-b8b7-e0d464771e5a"/>
+</source>
+<target>
+<ref refid="fb80691f-7f86-11ec-b096-e0d464771e5a"/>
+</target>
+</Transition>
+<Constraint id="cf54629d-7f8f-11ec-87f7-e0d464771e5a">
+<transition>
+<ref refid="cf539fd6-7f8f-11ec-9bd3-e0d464771e5a"/>
+</transition>
+</Constraint>
+<Activity id="e963581c-7f8f-11ec-ba76-e0d464771e5a">
+<name>
+<val>Sensor está en HIGH</val>
+</name>
+</Activity>
+<TransitionItem id="12643b38-7f90-11ec-a267-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<subject>
+<ref refid="212d6707-7f90-11ec-95ae-e0d464771e5a"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1933.0720233131894, -1080.6238422421206)</val>
+</matrix>
+<points>
+<val>[(115.25780925498498, -20.41868322858545), (170.47113051849692, -19.53280677868179)]</val>
+</points>
+<head-connection>
+<ref refid="a0a19257-7f87-11ec-bd4e-e0d464771e5a"/>
+</head-connection>
+<tail-connection>
+<ref refid="66935bdd-7f87-11ec-88f2-e0d464771e5a"/>
+</tail-connection>
+</TransitionItem>
+<Transition id="212d6707-7f90-11ec-95ae-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<guard>
+<ref refid="212ea000-7f90-11ec-b5e7-e0d464771e5a"/>
+</guard>
+<presentation>
+<reflist>
+<ref refid="12643b38-7f90-11ec-a267-e0d464771e5a"/>
+</reflist>
+</presentation>
+<source>
+<ref refid="a0a16b5c-7f87-11ec-9e4f-e0d464771e5a"/>
+</source>
+<target>
+<ref refid="66935bdc-7f87-11ec-84a4-e0d464771e5a"/>
+</target>
+</Transition>
+<Constraint id="212ea000-7f90-11ec-b5e7-e0d464771e5a">
+<transition>
+<ref refid="212d6707-7f90-11ec-95ae-e0d464771e5a"/>
+</transition>
+</Constraint>
+<Activity id="b89fbe0b-7f8a-11ec-8ce9-e0d464771e5a">
+<name>
+<val>Activar Timer</val>
+</name>
+</Activity>
+<InitialNode id="ec438494-7f8e-11ec-b4f9-e0d464771e5a">
+<activity>
+<ref refid="77150d99-7f88-11ec-9327-e0d464771e5a"/>
+</activity>
+<name>
+<val></val>
+</name>
+<presentation>
+<reflist>
+<ref refid="ec43ab94-7f8e-11ec-ae24-e0d464771e5a"/>
+</reflist>
+</presentation>
+</InitialNode>
+<InitialNodeItem id="ec43ab94-7f8e-11ec-ae24-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1662.4109720130468, -957.9021317355761)</val>
+</matrix>
+<width>
+<val>20.0</val>
+</width>
+<height>
+<val>20.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="ec438494-7f8e-11ec-b4f9-e0d464771e5a"/>
+</subject>
+</InitialNodeItem>
+<Pseudostate id="e73ba38b-7f90-11ec-9069-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<name>
+<val>Start</val>
+</name>
+<outgoing>
+<reflist>
+<ref refid="41e8d181-7f91-11ec-9b4a-e0d464771e5a"/>
+</reflist>
+</outgoing>
+<presentation>
+<reflist>
+<ref refid="e73ba38c-7f90-11ec-a873-e0d464771e5a"/>
+</reflist>
+</presentation>
+</Pseudostate>
+<PseudostateItem id="e73ba38c-7f90-11ec-a873-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -2007.6545282499642, -1144.5567838736974)</val>
+</matrix>
+<width>
+<val>20.0</val>
+</width>
+<height>
+<val>20.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="e73ba38b-7f90-11ec-9069-e0d464771e5a"/>
+</subject>
+</PseudostateItem>
+<TransitionItem id="f15a0252-7f90-11ec-a413-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<subject>
+<ref refid="41e8d181-7f91-11ec-9b4a-e0d464771e5a"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1990.3441432154766, -1086.8743144349692)</val>
+</matrix>
+<points>
+<val>[(2.689614965513101, -47.682469438728276), (99.79642089112305, -47.68246943872839)]</val>
+</points>
+<head-connection>
+<ref refid="e73ba38c-7f90-11ec-a873-e0d464771e5a"/>
+</head-connection>
+<tail-connection>
+<ref refid="d7a5e06e-7f85-11ec-8fee-e0d464771e5a"/>
+</tail-connection>
+</TransitionItem>
+<State id="0a6d7e11-7f91-11ec-9013-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<name>
+<val>Timer 1 Minuto</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="0a6d7e12-7f91-11ec-880d-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="0a6d7e12-7f91-11ec-880d-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1097.152985659826, -1351.4156098633068)</val>
+</matrix>
+<width>
+<val>541.9765636052675</val>
+</width>
+<height>
+<val>123.42103963065357</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="0a6d7e11-7f91-11ec-9013-e0d464771e5a"/>
+</subject>
+</StateItem>
+<Transition id="41e8d181-7f91-11ec-9b4a-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<guard>
+<ref refid="41e9946c-7f91-11ec-86fe-e0d464771e5a"/>
+</guard>
+<presentation>
+<reflist>
+<ref refid="f15a0252-7f90-11ec-a413-e0d464771e5a"/>
+</reflist>
+</presentation>
+<source>
+<ref refid="e73ba38b-7f90-11ec-9069-e0d464771e5a"/>
+</source>
+<target>
+<ref refid="d7a5b969-7f85-11ec-b8b7-e0d464771e5a"/>
+</target>
+</Transition>
+<Constraint id="41e9946c-7f91-11ec-86fe-e0d464771e5a">
+<transition>
+<ref refid="41e8d181-7f91-11ec-9b4a-e0d464771e5a"/>
+</transition>
+</Constraint>
+<State id="557a1a7b-7f91-11ec-a86a-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<doActivity>
+<ref refid="92a3d536-7f91-11ec-8989-e0d464771e5a"/>
+</doActivity>
+<name>
+<val>Paro</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="557a1a7c-7f91-11ec-81c9-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="557a1a7c-7f91-11ec-81c9-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 3.38001120818938, -965.883104315398)</val>
+</matrix>
+<width>
+<val>419.0</val>
+</width>
+<height>
+<val>50.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="557a1a7b-7f91-11ec-a86a-e0d464771e5a"/>
+</subject>
+</StateItem>
+<DecisionNode id="5d2adaa0-7f91-11ec-a1c3-e0d464771e5a">
+<activity>
+<ref refid="77150d99-7f88-11ec-9327-e0d464771e5a"/>
+</activity>
+<name>
+<val>Si se activa botón de paro</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="5d2adaa1-7f91-11ec-bd99-e0d464771e5a"/>
+</reflist>
+</presentation>
+</DecisionNode>
+<DecisionNodeItem id="5d2adaa1-7f91-11ec-bd99-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -106.3407329021147, -955.883104315398)</val>
+</matrix>
+<width>
+<val>20.0</val>
+</width>
+<height>
+<val>30.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="5d2adaa0-7f91-11ec-a1c3-e0d464771e5a"/>
+</subject>
+</DecisionNodeItem>
+<FlowItem id="69c7faba-7f91-11ec-9fef-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -479.8212521701455, -951.0266701247023)</val>
+</matrix>
+<points>
+<val>[(260.7144297115253, 10.29055788961432), (373.4805192680308, 10.143565809304334)]</val>
+</points>
+<tail-connection>
+<ref refid="5d2adaa1-7f91-11ec-bd99-e0d464771e5a"/>
+</tail-connection>
+</FlowItem>
+<TransitionItem id="788c8888-7f91-11ec-9b18-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -358.8585960265911, -947.3237316713283)</val>
+</matrix>
+<points>
+<val>[(272.51786312447643, 6.440627355930303), (362.2386072347805, 6.44062735593036)]</val>
+</points>
+<tail-connection>
+<ref refid="557a1a7c-7f91-11ec-81c9-e0d464771e5a"/>
+</tail-connection>
+</TransitionItem>
+<Activity id="92a3d536-7f91-11ec-8989-e0d464771e5a">
+<name>
+<val>Apaga motor y vibrador, Apaga Timer y entra al modo Manual</val>
+</name>
+</Activity>
+<Pseudostate id="7fb2a879-7f92-11ec-afd5-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<name>
+<val></val>
+</name>
+<outgoing>
+<reflist>
+<ref refid="84dfad91-7f92-11ec-be0e-e0d464771e5a"/>
+</reflist>
+</outgoing>
+<presentation>
+<reflist>
+<ref refid="7fb2cf8f-7f92-11ec-a806-e0d464771e5a"/>
+</reflist>
+</presentation>
+</Pseudostate>
+<PseudostateItem id="7fb2cf8f-7f92-11ec-a806-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1635.6092280072135, -1311.024533148579)</val>
+</matrix>
+<width>
+<val>20.0</val>
+</width>
+<height>
+<val>20.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="7fb2a879-7f92-11ec-afd5-e0d464771e5a"/>
+</subject>
+</PseudostateItem>
+<TransitionItem id="84231c5c-7f92-11ec-9f9e-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<subject>
+<ref refid="84dfad91-7f92-11ec-be0e-e0d464771e5a"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1638.2703579382, -1301.024533148579)</val>
+</matrix>
+<points>
+<val>[(22.66112993098659, 0.0), (69.09022101308983, 0.0)]</val>
+</points>
+<head-connection>
+<ref refid="7fb2cf8f-7f92-11ec-a806-e0d464771e5a"/>
+</head-connection>
+<tail-connection>
+<ref refid="a5ae8238-7f8a-11ec-bf2c-e0d464771e5a"/>
+</tail-connection>
+</TransitionItem>
+<Transition id="84dfad91-7f92-11ec-be0e-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<guard>
+<ref refid="84e0bf26-7f92-11ec-a413-e0d464771e5a"/>
+</guard>
+<presentation>
+<reflist>
+<ref refid="84231c5c-7f92-11ec-9f9e-e0d464771e5a"/>
+</reflist>
+</presentation>
+<source>
+<ref refid="7fb2a879-7f92-11ec-afd5-e0d464771e5a"/>
+</source>
+<target>
+<ref refid="a5ae8237-7f8a-11ec-a3b3-e0d464771e5a"/>
+</target>
+</Transition>
+<Constraint id="84e0bf26-7f92-11ec-a413-e0d464771e5a">
+<transition>
+<ref refid="84dfad91-7f92-11ec-be0e-e0d464771e5a"/>
+</transition>
+</Constraint>
+<FlowFinalNode id="a8439aea-7f92-11ec-b5e0-e0d464771e5a">
+<activity>
+<ref refid="77150d99-7f88-11ec-9327-e0d464771e5a"/>
+</activity>
+<name>
+<val>Encender de nuevo</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="a8439aeb-7f92-11ec-9314-e0d464771e5a"/>
+</reflist>
+</presentation>
+</FlowFinalNode>
+<FlowFinalNodeItem id="a8439aeb-7f92-11ec-9314-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 494.0938637733945, -1126.2597941149477)</val>
+</matrix>
+<width>
+<val>20.0</val>
+</width>
+<height>
+<val>20.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="a8439aea-7f92-11ec-b5e0-e0d464771e5a"/>
+</subject>
+</FlowFinalNodeItem>
+<FlowItem id="bde2e9fa-7f92-11ec-bd93-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 6.642667855040003, -1131.8169825151977)</val>
+</matrix>
+<points>
+<val>[(273.7373433531493, 16.233235825870565), (487.45119591835453, 15.557188400250197)]</val>
+</points>
+<tail-connection>
+<ref refid="a8439aeb-7f92-11ec-9314-e0d464771e5a"/>
+</tail-connection>
+</FlowItem>
+<FlowFinalNode id="f6110ce4-7f92-11ec-b78f-e0d464771e5a">
+<activity>
+<ref refid="77150d99-7f88-11ec-9327-e0d464771e5a"/>
+</activity>
+<name>
+<val>Fin</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="f6113295-7f92-11ec-8e47-e0d464771e5a"/>
+</reflist>
+</presentation>
+</FlowFinalNode>
+<FlowFinalNodeItem id="f6113295-7f92-11ec-8e47-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 494.0938637733943, -1291.4818280456332)</val>
+</matrix>
+<width>
+<val>20.0</val>
+</width>
+<height>
+<val>20.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="f6110ce4-7f92-11ec-b78f-e0d464771e5a"/>
+</subject>
+</FlowFinalNodeItem>
+<FlowItem id="00433e47-7f93-11ec-b97d-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 358.7798008237707, -1281.0393165234084)</val>
+</matrix>
+<points>
+<val>[(42.60021038441846, -0.44251152222477685), (135.31406294962375, -0.44251152222477685)]</val>
+</points>
+<tail-connection>
+<ref refid="f6113295-7f92-11ec-8e47-e0d464771e5a"/>
+</tail-connection>
+</FlowItem>
+<FlowFinalNode id="0f9ee108-7f93-11ec-88ae-e0d464771e5a">
+<activity>
+<ref refid="77150d99-7f88-11ec-9327-e0d464771e5a"/>
+</activity>
+<name>
+<val>Modo Manual</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="0f9ee109-7f93-11ec-b53c-e0d464771e5a"/>
+</reflist>
+</presentation>
+</FlowFinalNode>
+<FlowFinalNodeItem id="0f9ee109-7f93-11ec-b53c-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 494.0938637733944, -950.8831043153979)</val>
+</matrix>
+<width>
+<val>20.0</val>
+</width>
+<height>
+<val>20.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="0f9ee108-7f93-11ec-88ae-e0d464771e5a"/>
+</subject>
+</FlowFinalNodeItem>
+<FlowItem id="15b51fb6-7f93-11ec-acdd-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, 302.07889435211865, -953.1118611740266)</val>
+</matrix>
+<points>
+<val>[(120.30111685607085, 12.228756858628628), (192.01496942127574, 12.228756858628572)]</val>
+</points>
+<tail-connection>
+<ref refid="0f9ee109-7f93-11ec-b53c-e0d464771e5a"/>
+</tail-connection>
+</FlowItem>
+<State id="90fa67cb-7f93-11ec-8ac6-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<name>
+<val>Timer 15 Segundos</val>
+</name>
+<presentation>
+<reflist>
+<ref refid="90fa8ec5-7f93-11ec-8f89-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="90fa8ec5-7f93-11ec-8f89-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1698.040418808437, -1000.9527191613619)</val>
+</matrix>
+<width>
+<val>735.7379825140296</val>
+</width>
+<height>
+<val>163.50913397143398</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="90fa67cb-7f93-11ec-8ac6-e0d464771e5a"/>
+</subject>
+</StateItem>
+<FlowItem id="eead9713-7f93-11ec-8097-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1230.8455742736603, -944.0030415221722)</val>
+</matrix>
+<points>
+<val>[(1.6965503802213107, 0.7034138339517426), (52.161920491163755, 0.7034138339516858)]</val>
+</points>
+<tail-connection>
+<ref refid="2f04310b-7f8c-11ec-9610-e0d464771e5a"/>
+</tail-connection>
+</FlowItem>
+<State id="0671fca0-7f94-11ec-9f0a-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<name>
+<val>Timer 5 Segundos</val>
+</name>
+<ownedDiagram>
+<reflist>
+<ref refid="308e0c83-7f94-11ec-af59-e0d464771e5a"/>
+</reflist>
+</ownedDiagram>
+<presentation>
+<reflist>
+<ref refid="067223a3-7f94-11ec-a335-e0d464771e5a"/>
+</reflist>
+</presentation>
+</State>
+<StateItem id="067223a3-7f94-11ec-a335-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -939.0433539230538, -1018.9616681260604)</val>
+</matrix>
+<width>
+<val>514.6318904550275</val>
+</width>
+<height>
+<val>162.62653114193466</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="0671fca0-7f94-11ec-9f0a-e0d464771e5a"/>
+</subject>
+</StateItem>
+<Diagram id="308e0c83-7f94-11ec-af59-e0d464771e5a">
+<diagramType>
+<val>stm</val>
+</diagramType>
+<element>
+<ref refid="0671fca0-7f94-11ec-9f0a-e0d464771e5a"/>
+</element>
+<name>
+<val>New State Machine Diagram</val>
+</name>
+</Diagram>
+<Pseudostate id="3ec3124b-7f94-11ec-b0cb-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<outgoing>
+<reflist>
+<ref refid="564f9e1e-7f94-11ec-9272-e0d464771e5a"/>
+</reflist>
+</outgoing>
+<presentation>
+<reflist>
+<ref refid="3ec3124c-7f94-11ec-ae12-e0d464771e5a"/>
+</reflist>
+</presentation>
+</Pseudostate>
+<PseudostateItem id="3ec3124c-7f94-11ec-ae12-e0d464771e5a">
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -907.1055593064622, -953.5531625887762)</val>
+</matrix>
+<width>
+<val>20.0</val>
+</width>
+<height>
+<val>20.0</val>
+</height>
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<subject>
+<ref refid="3ec3124b-7f94-11ec-b0cb-e0d464771e5a"/>
+</subject>
+</PseudostateItem>
+<TransitionItem id="5549857d-7f94-11ec-bec7-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<subject>
+<ref refid="564f9e1e-7f94-11ec-9272-e0d464771e5a"/>
+</subject>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -893.6070352229406, -945.2116845629137)</val>
+</matrix>
+<points>
+<val>[(6.501475916478171, 1.4337487785960548), (46.98069554576034, 1.5331526376457987)]</val>
+</points>
+<head-connection>
+<ref refid="3ec3124c-7f94-11ec-ae12-e0d464771e5a"/>
+</head-connection>
+<tail-connection>
+<ref refid="b3397dc3-7f8c-11ec-8e2e-e0d464771e5a"/>
+</tail-connection>
+</TransitionItem>
+<Transition id="564f9e1e-7f94-11ec-9272-e0d464771e5a">
+<container>
+<ref refid="d7a62e4f-7f85-11ec-b188-e0d464771e5a"/>
+</container>
+<guard>
+<ref refid="5650d64d-7f94-11ec-8bd3-e0d464771e5a"/>
+</guard>
+<presentation>
+<reflist>
+<ref refid="5549857d-7f94-11ec-bec7-e0d464771e5a"/>
+</reflist>
+</presentation>
+<source>
+<ref refid="3ec3124b-7f94-11ec-b0cb-e0d464771e5a"/>
+</source>
+<target>
+<ref refid="b3397dc2-7f8c-11ec-86cc-e0d464771e5a"/>
+</target>
+</Transition>
+<Constraint id="5650d64d-7f94-11ec-8bd3-e0d464771e5a">
+<transition>
+<ref refid="564f9e1e-7f94-11ec-9272-e0d464771e5a"/>
+</transition>
+</Constraint>
+<FlowItem id="5a49b6b9-7f96-11ec-ab1d-e0d464771e5a">
+<diagram>
+<ref refid="7241e7b0-7f85-11ec-8dde-e0d464771e5a"/>
+</diagram>
+<horizontal>
+<val>0</val>
+</horizontal>
+<matrix>
+<val>(1.0, 0.0, 0.0, 1.0, -1177.6729087481826, -920.5399890925432)</val>
+</matrix>
+<points>
+<val>[(-1.0107450343137998, 0.0), (238.62955482512893, -22.362142643032882)]</val>
+</points>
+<head-connection>
+<ref refid="2f04310b-7f8c-11ec-9610-e0d464771e5a"/>
+</head-connection>
+</FlowItem>
+</gaphor>
