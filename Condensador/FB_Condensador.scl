@@ -41,28 +41,15 @@ VERSION : 0.1
 BEGIN
 	// Modo Manual
 	IF "InputsSignals".iAuto = FALSE THEN
-	(*    IF "States".sActual = #sMANUAL THEN
-	        "InputsSignals".iMotor := 0;
-	        "InputsSignals".iVibrador := 0;
-	    END_IF; *)
-	    // Controlar motor y vibrador
-	    // Salida del motor es igual a una entrada
 	    IF "InputsSignals".iSensor THEN
 	        "OutputsSignals".oMotor := FALSE;
 	    ELSE
 	        "OutputsSignals".oMotor := "InputsSignals".iMotor;
 	    END_IF;
 	    "OutputsSignals".oVibrador := "InputsSignals".iVibrador;
-	    // Vibrador es igual a una entrada
-	    // 
+	
 	    // Apagar timers
-	    "States".sTimer1Min := #s1MINSTOP;
-	    "States".sTimer15Sec := #s15SECSTOP;
-	    "States".sTimer5Sec := #s5SECSTOP;
-	    
-	    #oTimer1Min := #s1MINSTOP;
-	    #oTimer15Sec := #s15SECSTOP;
-	    #oTimer5Sec := #s5SECSTOP;
+	    "FC_Apagar_Timers"();
 	    
 	    // Cambiar estado
 	    "States".sActual := #sENCENDIDO;
@@ -93,7 +80,7 @@ BEGIN
 	            "States".sActual := #sENCENDIDO;
 	        END_IF; *)
 	    #sENCENDIDO:
-	        "OutputsSignals".oMotor := 1;
+	        "OutputsSignals".oMotor := "InputsSignals".iMotor;
 	        
 	        // Estados del Timer 1 minuto
 	        CASE #oTimer1Min OF
@@ -144,20 +131,12 @@ BEGIN
 	            
 	        END_CASE;
 	        
-	(*        IF "InputsSignals".iManual = TRUE AND "InputsSignals".iBoton = FALSE THEN
-	            "States".sActual := #sAPAGADO;
-	        END_IF; *)
+	        // Verifica el sensor
 	        IF "InputsSignals".iSensor = TRUE THEN
 	            "States".sActual := #sLLENO;
 	            
 	            // Apagar Timers
-	            "States".sTimer1Min := #s1MINSTOP;
-	            "States".sTimer15Sec := #s15SECSTOP;
-	            "States".sTimer5Sec := #s5SECSTOP;
-	            
-	            #oTimer1Min := #s1MINSTOP;
-	            #oTimer15Sec := #s15SECSTOP;
-	            #oTimer5Sec := #s5SECSTOP;
+	            "FC_Apagar_Timers"();
 	        END_IF;
 	    #sLLENO:
 	        "OutputsSignals".oMotor := 0;
@@ -176,13 +155,12 @@ BEGIN
 	        END_IF;
 	    #sERROR:
 	        "OutputsSignals".oMotor := 0;
-	        "States".sTimer1Min := #s1MINSTOP;
-	        "States".sTimer15Sec := #s15SECSTOP;
-	        "States".sTimer5Sec := #s5SECSTOP;
+	        "OutputsSignals".oVibrador := 0;
 	        
-	        #oTimer1Min := #s1MINSTOP;
-	        #oTimer15Sec := #s15SECSTOP;
-	        #oTimer5Sec := #s5SECSTOP;
+	        "InputsSignals".iMotor := 0;
+	        "InputsSignals".iVibrador := 0;
+	        
+	        "FC_Apagar_Timers"();
 	END_CASE;
 	
 	
@@ -195,13 +173,7 @@ BEGIN
 	    "InputsSignals".iVibrador := 0;
 	    
 	    // Apagar timers
-	    "States".sTimer1Min := #s1MINSTOP;
-	    "States".sTimer15Sec := #s15SECSTOP;
-	    "States".sTimer5Sec := #s5SECSTOP;
-	    
-	    #oTimer1Min := #s1MINSTOP;
-	    #oTimer15Sec := #s15SECSTOP;
-	    #oTimer5Sec := #s5SECSTOP;
+	    "FC_Apagar_Timers"();
 	    
 	    // Se va a manual
 	    "InputsSignals".iAuto := FALSE;
