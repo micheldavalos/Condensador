@@ -9,7 +9,12 @@ VERSION : 0.1
 
 
 BEGIN
-	"FB_Condensador_DB"();
-	
+	// Modo Manual
+	IF "InputSignals".iAuto = FALSE THEN
+	    "FC_ManualMode"();
+	// Modo Automatico
+	ELSIF "InputSignals".iAuto = TRUE THEN
+	    "FB_Condensador_DB"();
+	END_IF;
 END_ORGANIZATION_BLOCK
 
