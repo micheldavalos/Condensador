@@ -8,16 +8,10 @@ VERSION : 0.1
       oTimer5Sec : Int;
    END_VAR
 
-   VAR_TEMP 
-      tUnMinuto_IN : Bool;
-      tUnMinuto_Q : Bool;
-      tUnMinuto_ET : Time;
-      t15Sec_IN : Bool;
-      t15Sec_Q : Bool;
-      t15Sec_ET : Time;
-      t5Sec_IN : Bool;
-      t5Sec_Q : Bool;
-      t5Sec_ET : Time;
+   VAR 
+      Timer_1Minuto {InstructionName := 'TON_TIME'; LibVersion := '1.0'; S7_SetPoint := 'False'} : TON_TIME;
+      Timer_15sec {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      Timer_5Sec {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
    END_VAR
 
    VAR CONSTANT 
@@ -89,8 +83,9 @@ BEGIN
 	                "States".sTimer1Min := #s1MINRUNNING;
 	                #oTimer1Min := #s1MINRUNNING;
 	            #s1MINRUNNING:
-	                IF "Timer_UnMinuto".Q = TRUE AND "InputsSignals".iSensor = FALSE THEN
-	                    "Timer_UnMinuto".IN := FALSE;
+	                IF #Timer_1Minuto.Q = TRUE AND "InputsSignals".iSensor = FALSE THEN
+	                    // "Timer_UnMinuto".IN := FALSE;
+	                    #Timer_1Minuto.IN := FALSE;
 	                    "States".sActual := #sERROR;
 	                    "States".sTimer1Min := #s1MINSTOP;
 	                END_IF;
@@ -101,7 +96,7 @@ BEGIN
 	                "States".sTimer15Sec := #s15SECRUNNING;
 	                #oTimer15Sec := #s15SECRUNNING;
 	            #s15SECRUNNING:
-	                IF "Timer_15sec".Q = TRUE THEN
+	                IF #Timer_15sec.Q = TRUE THEN
 	                    //"Timer_15sec".IN := FALSE;
 	                    "States".sTimer15Sec := #s15SECPAUSE;
 	                    "States".sTimer5Sec := #s5SECRUNNING;
@@ -119,7 +114,7 @@ BEGIN
 	                // Vibrar
 	                "OutputsSignals".oVibrador := 1;
 	                #oTimer15Sec := #s15SECPAUSE;
-	                IF "Timer_5Sec".Q = TRUE THEN
+	                IF #Timer_5Sec.Q = TRUE THEN
 	                    "States".sTimer15Sec := #s15SECSTOP;
 	                    "States".sTimer5Sec := #s5SECSTOP;
 	                    #oTimer5Sec := #s5SECSTOP;
@@ -127,8 +122,6 @@ BEGIN
 	                    // Parar de vibrar
 	                    "OutputsSignals".oVibrador := 0;
 	                END_IF;
-	                
-	            
 	        END_CASE;
 	        
 	        // Verifica el sensor
@@ -180,21 +173,25 @@ BEGIN
 	    // Cambiar estado
 	    // "States".sActual := #sPARO;
 	END_IF;
+	
 	// Timer 1min
-	"Timer_UnMinuto".TON(IN := (#oTimer1Min = #s1MINRUNNING),
+	#Timer_1Minuto.IN := (#oTimer1Min = #s1MINRUNNING);
+	(* "Timer_UnMinuto".TON(IN := (#oTimer1Min = #s1MINRUNNING),
 	                     PT := T#1M,
 	                     Q => #tUnMinuto_Q,
-	                     ET=>#tUnMinuto_ET);
+	                     ET=>#tUnMinuto_ET); *)
 	// Timer 15sec
-	"Timer_15sec".TON(IN := (#oTimer15Sec = #s15SECRUNNING) AND (#oTimer1Min = #s1MINRUNNING),
+	#Timer_15sec.IN := (#oTimer15Sec = #s15SECRUNNING) AND (#oTimer1Min = #s1MINRUNNING);
+	(* "Timer_15sec".TON(IN := (#oTimer15Sec = #s15SECRUNNING) AND (#oTimer1Min = #s1MINRUNNING),
 	                  PT := T#15s,
 	                  Q => #t15Sec_Q,
-	                  ET => #t15Sec_ET);
+	                  ET => #t15Sec_ET); *)
 	// Timer 5sec
-	"Timer_5Sec".TON(IN := (#oTimer5Sec = #s5SECRUNNING),
+	#Timer_5Sec.IN := (#oTimer5Sec = #s5SECRUNNING);
+	(* "Timer_5Sec".TON(IN := (#oTimer5Sec = #s5SECRUNNING),
 	                 PT := T#5s,
 	                 Q => #t5Sec_Q,
-	                 ET => #t15Sec_ET);
+	                 ET => #t15Sec_ET); *)
 	
 	
 	

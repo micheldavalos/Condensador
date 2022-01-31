@@ -27,5 +27,6 @@ BEGIN
 	"FB_Condensador_DB".oTimer1Min := #s1MINSTOP;
 	"FB_Condensador_DB".oTimer15Sec := #s15SECSTOP;
 	"FB_Condensador_DB".oTimer5Sec := #s5SECSTOP;
+	
 END_FUNCTION
 
