@@ -5,26 +5,6 @@ VERSION : 0.1
    VAR_TEMP 
       lifebit : Bool;
       error : Int;
-      sActual : Int;
-      sTimer1Min : Int;
-      tUnMinuto_IN : Bool;
-      tUnMinuto_Q : Bool;
-      tUnMinuto_ET : Time;
-   END_VAR
-
-   VAR CONSTANT 
-      sApagado : Int := 10;
-      sEncendido : Int := 20;
-      sLleno : Int := 30;
-      sParo : Int := 40;
-      sError : Int := 50;
-      s1MinStop : Int := 100;
-      s1MinRunning : Int := 110;
-      s15SecStop : Int := 200;
-      s15SecRunning : Int := 210;
-      sEspera : Int := 0;
-      HIGH : Bool := 1;
-      LOW : Bool := 0;
    END_VAR
 
 
